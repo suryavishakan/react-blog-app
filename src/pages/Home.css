@@ -5,7 +5,21 @@
   margin-top: 20px;
 }
 
+.home h2 {
+  font-size: 1.4rem;
+}
+
+.home .card h3,
+.home h2 {
+  font-weight: 500;
+}
+
 .home .card p {
   color: rgb(201, 200, 200);
-  margin-top: 0.5rem;
+  margin: 0.7rem 0;
+}
+
+.home .card a {
+  text-decoration: none;
+  color: #fff;
 }

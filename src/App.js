@@ -3,6 +3,7 @@ import {
   Route,
   Switch,
   NavLink,
+  Redirect,
 } from "react-router-dom";
 import "./App.css";
 
@@ -10,6 +11,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Article from "./pages/Article";
 
 function App() {
   return (
@@ -34,6 +36,12 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/article/:id">
+            <Article />
+          </Route>
+          <Route path="*">
+            <Redirect to="/" />
           </Route>
         </Switch>
       </Router>
