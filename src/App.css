@@ -1,8 +1,12 @@
+/* app component */
+
 .App {
   max-width: 970px;
   margin: 5rem auto;
   padding: 0 2rem;
 }
+
+/* nav styles */
 
 nav {
   display: flex;
