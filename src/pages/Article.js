@@ -27,7 +27,7 @@ const Article = () => {
       {/* if there is an error, display this component */}
       {error && (
         <div>
-          <h3>404 Error</h3>
+          <h3>404 ERROR</h3>
           <p>{error}</p>
         </div>
       )}
