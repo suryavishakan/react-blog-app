@@ -1,8 +1,9 @@
 import React from "react";
+// custom hooks
 import { useFetch } from "../hooks/useFetch";
 import { Link } from "react-router-dom";
 
-// home styles
+// styles
 import "./Home.css";
 
 const Home = () => {
@@ -10,11 +11,13 @@ const Home = () => {
   return (
     <div className="home">
       <h2>Articles</h2>
+      {/* if there is an error, render this component */}
       {error && (
         <div>
           <h3>{error}</h3>
         </div>
       )}
+      {/* if there is no error, and if we have received the article, render this component */}
       {articles &&
         articles.map((article) => (
           <div key={article.id} className="card">
