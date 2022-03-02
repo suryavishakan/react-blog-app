@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
+// custom hook
 import { useFetch } from "../hooks/useFetch";
-import { useEffect } from "react";
+
 
 // styles
 import "./Article.css";
@@ -23,12 +24,14 @@ const Article = () => {
 
   return (
     <div>
+      {/* if there is an error, display this component */}
       {error && (
         <div>
           <h3>404 Error</h3>
           <p>{error}</p>
         </div>
       )}
+      {/* if there is no error, and if we receive an article, render this component   */}
       {article && (
         <div className="article-section">
           <h2>{article.title}</h2>
